@@ -1,0 +1,50 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 11, 2015, 4:41:32 PM
+    Author     : dhenton
+*/
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "components/reset";
+@import "components/typography";
+
+@import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900); /* font-family: 'Elsie Swash Caps', cursive; */
+@import url(http://fonts.googleapis.com/css?family=Clicker+Script); /* font-family: 'Clicker Script', cursive; */
+
+.align-left
+{
+    text-align: left;
+}
+.para
+{
+    padding: 5px 0px;
+}
+
+header
+{
+    width: 100%;
+    margin-top:25px;
+    background-color: #ddd;
+    text-align:center;
+    div#logo
+    { 
+        font-family: 'Clicker Script';
+        font-size: 35px;
+        text-transform: uppercase;
+        font-weight: bold;
+
+    }
+    div#crown
+    { 
+        background:    url(../images/logo_crown_emboss.png) no-repeat top center
+    }
+
+} 
+
+ @import "components/nav";
+ @import "components/mainContent";
+ 

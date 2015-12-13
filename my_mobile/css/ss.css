@@ -1,0 +1,248 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 11, 2015, 4:41:32 PM
+    Author     : dhenton
+*/
+@import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900);
+@import url(http://fonts.googleapis.com/css?family=Clicker+Script);
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/****************
+Reset
+****************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1.4;
+  font-family: Arial, Helvetica, sans-serif; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+:focus {
+  outline: none; }
+
+strong {
+  font-weight: bold; }
+
+/* micro clear fix */
+.grouping:before,
+.grouping:after {
+  content: " ";
+  display: table; }
+
+.grouping:after {
+  clear: both; }
+
+img, iframe, video, object {
+  max-width: 100%; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/*------------end reset.scss-------------------*/
+/* typography ---------------------- */
+h1 {
+  font-size: 24px; }
+
+h2 {
+  font-size: 21px; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 15px; }
+
+h5 {
+  font-size: 12px; }
+
+/* typography ---------------------- */
+/* font-family: 'Elsie Swash Caps', cursive; */
+/* font-family: 'Clicker Script', cursive; */
+.align-left {
+  text-align: left; }
+
+.para {
+  padding: 5px 0px; }
+
+header {
+  width: 100%;
+  margin-top: 25px;
+  background-color: #ddd;
+  text-align: center; }
+  header div#logo {
+    font-family: 'Clicker Script';
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bold; }
+  header div#crown {
+    background: url(../images/logo_crown_emboss.png) no-repeat top center; }
+
+/* ---------- begin nav ------------------ */
+nav {
+  background-color: #fff;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  margin-bottom: 25px;
+  width: 100%; }
+  nav::after {
+    clear: both;
+    content: "";
+    display: table; }
+  nav li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #766e65;
+    text-transform: uppercase;
+    font-size: 12px;
+    -webkit-transition: 0.15s background-color linear;
+    -moz-transition: 0.15s background-color linear;
+    -o-transition: 0.15s background-color linear;
+    transition: 0.15s background-color linear; }
+    nav li:focus, nav li:hover, nav li.active {
+      background-color: #eb2428;
+      color: #fff; }
+      nav li:focus a, nav li:hover a, nav li.active a {
+        background-color: #eb2428;
+        color: #fff; }
+
+.primary-nav > li {
+  margin: -2px;
+  padding: 55px;
+  display: inline;
+  border-left: 1px solid #ada791; }
+  .primary-nav > li:last-child {
+    border-right: 1px solid #ada791; }
+  .primary-nav > li > a {
+    text-decoration: none; }
+    @media all and (max-width: 500px) {
+      .primary-nav > li > a {
+        font-size: smaller;
+        letter-spacing: -1px; } }
+
+/* ---------- end nav ------------------ */
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+.home {
+  margin: 5px; }
+
+.flex-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .flex-main > * {
+    padding: 20px;
+    margin: 10px;
+    flex: 1 33%; }
+
+#companyNews {
+  text-align: left;
+  background: url(../images/handmadepaper.png); }
+
+#larry {
+  border: 2px solid goldenrod; }
+
+#innovate {
+  text-align: center; }
+
+@media all and (max-width: 650px) {
+  #innovate {
+    flex: 1 1 100%; }
+
+  #companyNews {
+    flex: 1 1 100%; }
+
+  #larry {
+    flex: 1 1 100%; } }
+@media all and (min-width: 650px) {
+  #innovate {
+    flex: 3 auto; }
+
+  #innovate {
+    order: 1; }
+
+  #companyNews {
+    order: 2; }
+
+  #larry {
+    order: 3; } }
+/* ----footer -------*/
+.flex-footer {
+  display: flex;
+  margin: 25px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center; }
+  .flex-footer section {
+    padding: 10px;
+    margin: 10px;
+    border: thin solid red;
+    flex-grow: 1; }
+
+@media all and (max-width: 650px) {
+  #contact {
+    flex: 1 1 100%; }
+
+  #links {
+    flex: 1 1 100%; }
+
+  #follow {
+    flex: 1 1 100%; } }
+
+/*# sourceMappingURL=ss.css.map */

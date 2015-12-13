@@ -1,0 +1,77 @@
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+.home
+{
+    margin: 5px;
+}
+
+.flex-main
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & > *
+    {
+        padding: 20px;
+        margin: 10px;
+        flex: 1 33%;
+    }
+}
+
+
+
+
+#companyNews {
+    text-align: left;
+    background: url(../images/handmadepaper.png) ;
+}
+
+#larry {
+    border: 2px solid goldenrod;
+}
+
+#innovate {
+    text-align: center;
+
+}
+
+@media all and (max-width: 650px) {
+    #innovate    { flex: 1 1 100%; }
+    #companyNews  { flex: 1 1 100%; }
+    #larry { flex: 1 1 100%; }
+}
+
+@media all and (min-width: 650px) {
+    #innovate   { flex: 3 auto; }
+    #innovate { order: 1; } 
+    #companyNews    { order: 2; }
+    #larry { order: 3; }
+
+}
+
+/* ----footer -------*/
+.flex-footer
+{
+    display: flex;
+    margin: 25px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:  flex-start;
+    align-items: center; 
+    section
+    {
+        padding: 10px;
+        margin: 10px;
+        border: thin solid red;
+        flex-grow: 1   ;
+    }
+}
+@media all and (max-width: 650px) {
+    #contact   { flex: 1 1 100%; }
+    #links { flex: 1 1 100%; }
+    #follow { flex: 1 1 100%; }
+}
+
+
