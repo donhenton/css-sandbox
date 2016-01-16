@@ -1,0 +1,174 @@
+/****************
+Reset
+****************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 9, ../sass/components/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 30, ../sass/components/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 34, ../sass/components/_reset.scss */
+body {
+  line-height: 1.4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 38, ../sass/components/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 41, ../sass/components/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 44, ../sass/components/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 49, ../sass/components/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 53, ../sass/components/_reset.scss */
+:focus {
+  outline: none;
+}
+
+/* line 56, ../sass/components/_reset.scss */
+strong {
+  font-weight: bold;
+}
+
+/* micro clear fix */
+/* line 60, ../sass/components/_reset.scss */
+.grouping:before,
+.grouping:after {
+  content: " ";
+  display: table;
+}
+
+/* line 65, ../sass/components/_reset.scss */
+.grouping:after {
+  clear: both;
+}
+
+/* line 68, ../sass/components/_reset.scss */
+img, iframe, video, object {
+  max-width: 100%;
+}
+
+/* line 72, ../sass/components/_reset.scss */
+html {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* line 77, ../sass/components/_reset.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/*------------end reset.scss-------------------*/
+/* typography ---------------------- */
+/* line 5, ../sass/components/_typography.scss */
+h1 {
+  font-size: 24px;
+}
+
+/* line 5, ../sass/components/_typography.scss */
+h2 {
+  font-size: 21px;
+}
+
+/* line 5, ../sass/components/_typography.scss */
+h3 {
+  font-size: 18px;
+}
+
+/* line 5, ../sass/components/_typography.scss */
+h4 {
+  font-size: 15px;
+}
+
+/* line 5, ../sass/components/_typography.scss */
+h5 {
+  font-size: 12px;
+}
+
+/* typography ---------------------- */
+/* line 10, ../sass/droptest.scss */
+.above {
+  background-color: tan;
+  padding: 0.5%;
+  margin: 0.5%;
+  border: thin solid black;
+}
+
+/* line 16, ../sass/droptest.scss */
+.below {
+  background-color: blue;
+  color: white;
+  padding: 0.5%;
+  margin: 0.5%;
+  border: thin solid black;
+  clear: both;
+}
+
+/* line 26, ../sass/droptest.scss */
+.container {
+  background-color: #ccc;
+  padding: 2%;
+  margin: 2%;
+}
+
+/* line 33, ../sass/droptest.scss */
+.box {
+  background-color: teal;
+  color: white;
+  width: 33.333%;
+  height: 100px;
+  float: left;
+  padding: 1.5%;
+  border: 4px #ccc double;
+  margin: 0%;
+}
+
+/*# sourceMappingURL=droptest.css.map */
