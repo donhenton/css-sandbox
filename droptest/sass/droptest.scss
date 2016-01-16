@@ -1,6 +1,6 @@
 @import "components/reset";
 @import "components/typography";
-
+//https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 @mixin setup  {
     padding:0.5%;
     margin: 0.5%;
@@ -21,13 +21,21 @@
     clear:both;
 }
 
- 
+
 
 .container
 {
     background-color: #ccc;
     padding:2%;
     margin: 2%;
+    
+    .inner-container
+    {
+        border: thin solid red;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
 .box
@@ -35,14 +43,19 @@
     background-color: teal;
     color: white;
     width: 33.333%;
-    height: 100px;
-    float: left;
+    height: 50px;
+   // float: left;
     padding:1.5%;
     text-align: center;
     border: 4px #ccc double;
     margin: 0%;
     // @include setup;
+
+    &.big
+    {
+        height: 150px;
+        
+    }
 }
 
- 
- 
+

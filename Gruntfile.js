@@ -16,16 +16,19 @@ module.exports = function (grunt) {
         watch: {
             options: {livereload: true}
             ,
-            drop_test: {
-                files: [ './droptest/*.js',
+            drop_html: {
+                files: [ './droptest/js/**/*.js',
                     './droptest/css/droptest.css',
-                    './droptest/sass/**/*.scss',
-                    './droptest/droptest.html'],
+                    './droptest/droptest.html'] 
+            },
+             drop_sass: {
+                files: [  
+                    './droptest/sass/**/*.scss' ],
                 tasks: ['sass:droptest'],
                 options: {
-                    spawn: true
+                    spawn: false
                 }
-            },
+            } 
         },
         connect: {
             droptest: {
@@ -45,6 +48,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-connect');
-    grunt.registerTask("droptest", ['sass:droptest','connect:droptest', 'watch:drop_test']);
+    grunt.registerTask("droptest", ['sass:droptest','connect:droptest', 'watch']);
 
 }

@@ -4,4 +4,8 @@
  * and open the template in the editor.
  */
 
-
+function shiftBox(boxId)
+{
+    var id = "#box"+boxId;
+    $(id).toggleClass('big');
+}

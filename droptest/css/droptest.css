@@ -158,18 +158,28 @@ h5 {
   padding: 2%;
   margin: 2%;
 }
+/* line 32, ../sass/droptest.scss */
+.container .inner-container {
+  border: thin solid red;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
-/* line 33, ../sass/droptest.scss */
+/* line 41, ../sass/droptest.scss */
 .box {
   background-color: teal;
   color: white;
   width: 33.333%;
-  height: 100px;
-  float: left;
+  height: 50px;
   padding: 1.5%;
   text-align: center;
   border: 4px #ccc double;
   margin: 0%;
+}
+/* line 54, ../sass/droptest.scss */
+.box.big {
+  height: 150px;
 }
 
 /*# sourceMappingURL=droptest.css.map */
