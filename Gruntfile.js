@@ -19,6 +19,7 @@ module.exports = function (grunt) {
             drop_test: {
                 files: [ './droptest/*.js',
                     './droptest/css/droptest.css',
+                    './droptest/sass/**/*.scss',
                     './droptest/droptest.html'],
                 tasks: ['sass:droptest'],
                 options: {

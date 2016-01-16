@@ -167,6 +167,7 @@ h5 {
   height: 100px;
   float: left;
   padding: 1.5%;
+  text-align: center;
   border: 4px #ccc double;
   margin: 0%;
 }

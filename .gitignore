@@ -2,3 +2,5 @@
 /src/sass/.sass-cache/
 /node_modules/
 /bower_components/
+/.sass-cache/
+.sass-cache/
