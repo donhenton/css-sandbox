@@ -8,4 +8,5 @@ function shiftBox(boxId)
 {
     var id = "#box"+boxId;
     $(id).toggleClass('big');
+    $(id + " .input-container").toggleClass('visible');
 }

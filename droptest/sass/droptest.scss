@@ -28,10 +28,10 @@
     background-color: #ccc;
     padding:2%;
     margin: 2%;
-    
+
     .inner-container
     {
-        
+
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -40,22 +40,77 @@
 
 .box
 {
-    background-color: teal;
-    color: white;
+    background-color: linen;
+    color: black;
     width: 33.333%;
-    height: 50px;
-   // float: left;
+    height: 70px; 
     padding:1.5%;
     text-align: center;
     border: 4px #ccc double;
     margin: 0%;
-    // @include setup;
+
+
+    &:before,
+    &:after {
+        content: " ";
+        display: table; 
+    }
+    &:after {
+        clear: both; 
+    }
+
 
     &.big
     {
-        height: 150px;
-        
+        height: auto;
+
     }
+    .box-text
+    {
+        float: left;
+    }
+
+
+
+    .buttonClass {
+        -moz-box-shadow: 0px 10px 14px -7px #276873;
+        -webkit-box-shadow: 0px 10px 14px -7px #276873;
+        box-shadow: 0px 10px 14px -7px #276873;
+        background-color:#b85151;
+        -moz-border-radius:8px;
+        -webkit-border-radius:8px;
+        border-radius:8px;
+
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:12px;
+        font-weight:bold;
+        padding:4px 4px;
+        text-decoration:none;
+        float:right;
+        text-shadow:0px 1px 0px #3d768a;
+    }
+    .buttonClass:hover {
+        background-color:#b31d31;
+    }
+    .buttonClass:active {
+        position:relative;
+        top:1px;
+    }
+
+    .input-container
+    {
+        clear:both;
+        float:left;
+        margin-top: 15px;
+        display:none;
+        &.visible
+        {
+            display:block;
+        }
+    }
+
 }
 
 
