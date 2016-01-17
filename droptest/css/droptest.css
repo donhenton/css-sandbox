@@ -160,7 +160,6 @@ h5 {
 }
 /* line 32, ../sass/droptest.scss */
 .container .inner-container {
-  border: thin solid red;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
