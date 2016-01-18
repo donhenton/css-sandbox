@@ -7,6 +7,13 @@
 function shiftBox(boxId)
 {
     var id = "#box"+boxId;
-    $(id).toggleClass('big');
-    $(id + " .input-container").toggleClass('visible');
+    if ($(id+" input[type='checkbox']").length >0)
+    {
+        $(id).toggleClass('big');
+    }
+    
+    
+    
+  //  $(id).toggleClass('big');
+  //  $(id + " .input-container").toggleClass('visible');
 }

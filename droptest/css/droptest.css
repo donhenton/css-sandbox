@@ -170,30 +170,31 @@ h5 {
   background-color: linen;
   color: black;
   width: 33.333%;
-  height: 70px;
+  height: 65px;
   padding: 1.5%;
   text-align: center;
+  overflow: hidden;
   border: 4px #ccc double;
   margin: 0%;
 }
-/* line 53, ../sass/droptest.scss */
+/* line 54, ../sass/droptest.scss */
 .box:before, .box:after {
   content: " ";
   display: table;
 }
-/* line 58, ../sass/droptest.scss */
+/* line 59, ../sass/droptest.scss */
 .box:after {
   clear: both;
 }
-/* line 63, ../sass/droptest.scss */
+/* line 64, ../sass/droptest.scss */
 .box.big {
-  height: auto;
+  height: 125px;
 }
-/* line 68, ../sass/droptest.scss */
+/* line 69, ../sass/droptest.scss */
 .box .box-text {
   float: left;
 }
-/* line 75, ../sass/droptest.scss */
+/* line 76, ../sass/droptest.scss */
 .box .buttonClass {
   -moz-box-shadow: 0px 10px 14px -7px #276873;
   -webkit-box-shadow: 0px 10px 14px -7px #276873;
@@ -212,25 +213,20 @@ h5 {
   float: right;
   text-shadow: 0px 1px 0px #3d768a;
 }
-/* line 94, ../sass/droptest.scss */
+/* line 95, ../sass/droptest.scss */
 .box .buttonClass:hover {
   background-color: #b31d31;
 }
-/* line 97, ../sass/droptest.scss */
+/* line 98, ../sass/droptest.scss */
 .box .buttonClass:active {
   position: relative;
   top: 1px;
 }
-/* line 102, ../sass/droptest.scss */
+/* line 103, ../sass/droptest.scss */
 .box .input-container {
   clear: both;
   float: left;
   margin-top: 15px;
-  display: none;
-}
-/* line 108, ../sass/droptest.scss */
-.box .input-container.visible {
-  display: block;
 }
 
 /*# sourceMappingURL=droptest.css.map */

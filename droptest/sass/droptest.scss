@@ -43,9 +43,10 @@
     background-color: linen;
     color: black;
     width: 33.333%;
-    height: 70px; 
+    height: 65px;
     padding:1.5%;
     text-align: center;
+    overflow: hidden;
     border: 4px #ccc double;
     margin: 0%;
 
@@ -62,7 +63,7 @@
 
     &.big
     {
-        height: auto;
+        height: 125px;
 
     }
     .box-text
@@ -104,11 +105,7 @@
         clear:both;
         float:left;
         margin-top: 15px;
-        display:none;
-        &.visible
-        {
-            display:block;
-        }
+        
     }
 
 }
