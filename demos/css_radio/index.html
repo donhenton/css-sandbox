@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+
+        <link rel="stylesheet" href="css/button_stuff.css">
+        <link rel="stylesheet" href="css/css_demo.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <p>CSS DEMO</p>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+
+        <p id="type-switcher">
+            <input type="radio" name="usertype" value="existing_user" id="existing" checked="checked" />
+            <label for="existing" id="existing-label">
+                <span class="text"><b>Existing</b><br/>A second line here</span>
+            </label><br/>
+            <input type="radio" name="usertype" value="new_user" id="new" />
+            <label for="new" id="new-label">
+                <span class="text"><b>New</b><br/>A second line here</span>
+            </label>
+        </p>
+
+        <hr/>
+
+        <p>Button Demo</p>
+
+        <div id="timeframe-group">
+            <input type="radio" name="timeframe" value="adhoc" id="adhoc" checked="checked" />
+            <label for="adhoc" id="adhoc-label">
+                <span class="text">Adhoc</span>
+            </label> 
+            <input type="radio" name="timeframe" value="alwayson" id="alwayson" />
+            <label for="alwayson" id="alwayson-label">
+                <span class="text">Always On</span>
+            </label>
+        </div>
+
+        <hr/>
+
+        <button class="button">Get a job</button>
+
+
+        <script>
+
+            var existing = $("#type-switcher #existing");
+            var inputSelector = '#type-switcher input[name="usertype"]';
+            var newvar = $("#type-switcher #new");
+            var combined = existing.add(newvar);
+            combined.off().on('click', function () {
+                console.log("clicked on stuff " + this.id);
+                 
+                switch(this.id)
+                {
+                    case 'existing':
+                    $(inputSelector).val()
+                    break;
+                    
+                    case 'new_user':
+                    $(inputSelector).val()
+                    break;
+                        
+                    default:     
+                }
+                
+                console.log('result ' + $(inputSelector+":checked").val());
+
+            });
+
+        </script>
+    </body>
+</html>

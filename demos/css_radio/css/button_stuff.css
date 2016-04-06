@@ -1,0 +1,73 @@
+#timeframe-group 
+{
+    display: inline-block;
+    width: 400px;  
+}
+
+#timeframe-group label:last-child {
+    border-radius: 0 30px 30px 0;
+}
+#timeframe-group [type="radio"] {
+    display: none;
+}
+#timeframe-group [type="radio"]:first-child + label {
+    border-radius: 30px 0 0 30px;
+
+}
+
+/* unselected button */
+#timeframe-group label {
+    display: block;
+    float: left;
+    width:85px; 
+    height:25px;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 2px;
+    margin: auto;
+    font-size: 0.9rem;
+
+
+    background: #fff;
+    border: 1px solid #00aeef;
+
+    color:#0079b8;
+}
+
+/* selected button */
+#timeframe-group [type="radio"]:checked + label {
+
+    background: #00aeef;
+    background: linear-gradient(rgba(0,174,239,1) 0%, rgba(0,174,239,1) 66%, rgba(0,80,133,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeef', endColorstr='#005085', GradientType=0 );
+    color: white;
+    cursor: pointer;
+
+ 
+}
+
+
+
+/* -------------------------------------------------- */
+
+
+.button
+{ 
+    background: #00aeef;
+    border: 1px solid #00aeef;
+    border-radius: 0.3rem;
+    color: #fff;
+    cursor: pointer;
+    margin: auto;
+    font-size: 0.9rem;
+    text-decoration: none;
+    padding: .625rem;
+    line-height: 80%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
