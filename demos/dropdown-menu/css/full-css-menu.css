@@ -101,7 +101,7 @@ h5 {
       padding: 15px 0;
       width: 120px;
       border-left: 1px solid #ada791; }
-  .primary-nav > li:first-child > a {
+  .primary-nav > li:first-child > a, .primary-nav span {
     border-left: none; }
 
 nav {
@@ -124,7 +124,7 @@ nav {
     -o-transition: 0.15s background-color linear;
     transition: 0.15s background-color linear; }
     nav li a:focus, nav li a:hover, nav li a.active, nav span.groupMenu-placeholder:focus, nav span.groupMenu-placeholder:hover, nav span.groupMenu-placeholder.active {
-      background-color: green;
+      background-color: #29a7f5;
       color: #fff; }
 
 /****************

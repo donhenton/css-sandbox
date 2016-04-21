@@ -19,7 +19,7 @@ $boxWidth: 120px;
             border-left: 1px solid #ada791;
         }
     }
-    & > li:first-child > a {
+    & > li:first-child > a , span {
         border-left: none;
     }
 
@@ -49,7 +49,7 @@ nav {
         &:focus,
             &:hover,
             &.active {
-            background-color: green;
+            background-color: #29a7f5;
             color: #fff; 
         }
     }
