@@ -92,20 +92,17 @@ h5 {
 
 /* typography ---------------------- */
 .primary-nav {
-  float: right;
-  display: block; }
-
-.primary-nav > li {
-  float: left; }
-
-.primary-nav > li > a {
   float: left;
-  padding: 25px 0;
-  width: 150px;
-  border-left: 1px solid #ada791; }
-
-.primary-nav > li:first-child > a {
-  border-left: none; }
+  display: block; }
+  .primary-nav > li {
+    float: left; }
+    .primary-nav > li > a {
+      float: left;
+      padding: 15px 0;
+      width: 120px;
+      border-left: 1px solid #ada791; }
+  .primary-nav > li:first-child > a {
+    border-left: none; }
 
 nav {
   background-color: #fff;
@@ -114,50 +111,41 @@ nav {
   right: 0;
   top: 0;
   z-index: 1;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); }
-
-nav li a {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #766e65;
-  text-transform: uppercase;
-  font-size: 15px;
-  text-align: center;
-  -webkit-transition: 0.15s background-color linear;
-  -moz-transition: 0.15s background-color linear;
-  -o-transition: 0.15s background-color linear;
-  transition: 0.15s background-color linear; }
-
-nav li a:focus,
-nav li a:hover,
-nav li a.active {
-  background-color: #eb2428;
-  color: #fff; }
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); }
+  nav li a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #766e65;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+    -webkit-transition: 0.15s background-color linear;
+    -moz-transition: 0.15s background-color linear;
+    -o-transition: 0.15s background-color linear;
+    transition: 0.15s background-color linear; }
+    nav li a:focus, nav li a:hover, nav li a.active {
+      background-color: green;
+      color: #fff; }
 
 /****************
 Drop Down Menu
 ****************/
 .has-submenu a {
   display: block;
-  padding: 20px 0;
+  padding: 10px 0;
   z-index: 10;
   position: relative; }
-
 .has-submenu ul {
   position: absolute;
   z-index: 5;
-  top: 70px;
+  top: 50px;
   background-color: #fff;
-  border-bottom: 1px solid #ada791;
-  border-left: 1px solid #ada791;
-  border-right: 1px solid #ada791;
-  width: 150px;
+  border: 1px solid #ada791;
+  width: 120px;
   border-radius: 0 0 15px 15px;
   overflow: hidden;
   display: none; }
-
 .has-submenu:hover ul {
-  display: block;
-  -webkit-animation: slideDown .5s ease;
-  animation: slideDown .5s ease; }
+  display: block; }
 
 /*# sourceMappingURL=full-css-menu.css.map */
