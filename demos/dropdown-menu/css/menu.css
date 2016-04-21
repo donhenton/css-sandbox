@@ -1,0 +1,53 @@
+body {
+  font-family: sans-serif;
+  font-weight: 100;
+  background: #eee; }
+
+.menubar {
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px;
+  list-style: none;
+  font-size: 14px;
+  padding: 0 10px; }
+
+.menubar-item {
+  display: inline-block;
+  position: relative; }
+
+.menubar-item-target {
+  color: black;
+  display: block;
+  padding: 10px 14px;
+  text-decoration: none; }
+  .menubar-item-target:hover, .is-selected .menubar-item-target {
+    background: #29a7f5;
+    color: white; }
+
+.menu {
+  box-shadow: rgba(0, 0, 0, 0.5) 0 5px 15px;
+  border-radius: 3px;
+  border-top-left-radius: 0;
+  display: none;
+  position: absolute;
+  top: 100%;
+  background: white;
+  list-style: none;
+  width: 15em;
+  padding: 10px 0; }
+  .is-selected .menu {
+    display: block; }
+
+.menu-item-target {
+  color: black;
+  display: block;
+  padding: 8px 20px;
+  text-decoration: none; }
+  .menu-item-target:hover {
+    background: #29a7f5;
+    color: white; }
+
+.menu-separator {
+  border-top: 1px solid #ddd;
+  margin: 8px; }
+
+/*# sourceMappingURL=menu.css.map */
