@@ -96,7 +96,7 @@ h5 {
   display: block; }
   .primary-nav > li {
     float: left; }
-    .primary-nav > li > a {
+    .primary-nav > li > a, .primary-nav > li span {
       float: left;
       padding: 15px 0;
       width: 120px;
@@ -112,7 +112,7 @@ nav {
   top: 0;
   z-index: 1;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); }
-  nav li a {
+  nav li a, nav span.groupMenu-placeholder {
     font-family: Arial, Helvetica, sans-serif;
     color: #766e65;
     text-transform: uppercase;
@@ -123,7 +123,7 @@ nav {
     -moz-transition: 0.15s background-color linear;
     -o-transition: 0.15s background-color linear;
     transition: 0.15s background-color linear; }
-    nav li a:focus, nav li a:hover, nav li a.active {
+    nav li a:focus, nav li a:hover, nav li a.active, nav span.groupMenu-placeholder:focus, nav span.groupMenu-placeholder:hover, nav span.groupMenu-placeholder.active {
       background-color: green;
       color: #fff; }
 

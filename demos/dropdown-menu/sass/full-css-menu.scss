@@ -9,10 +9,10 @@ $boxWidth: 120px;
     float: left;
     display: block;
 
-    & > li {
+    & > li  {
         float: left;
 
-        & > a {
+        & > a , span {
             float: left;
             padding: 15px 0;
             width: $boxWidth;
@@ -34,7 +34,7 @@ nav {
     z-index:1;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
 
-    li a {
+    li a,span.groupMenu-placeholder {
         font-family: Arial, Helvetica, sans-serif;
         color: #766e65;
         text-transform: uppercase;
