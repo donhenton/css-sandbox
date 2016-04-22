@@ -5,27 +5,9 @@ $boxWidth: 120px;
 
 
 
-.primary-nav {
-    float: left;
-    display: block;
 
-    & > li  {
-        float: left;
 
-        & > a , span {
-            float: left;
-            padding: 15px 0;
-            width: $boxWidth;
-            border-left: 1px solid #ada791;
-        }
-    }
-    & > li:first-child > a , span {
-        border-left: none;
-    }
-
-}
-
-nav {
+nav.topMenu {
     background-color: #fff;
     position: fixed;
     left: 0;
@@ -53,35 +35,60 @@ nav {
             color: #fff; 
         }
     }
-}
 
-
-
-/****************
-Drop Down Menu
-****************/
-.has-submenu
-{ 
-    a {
+    //first level ul links
+    .primary-nav {
+        float: left;
         display: block;
-        padding: 10px 0;
-        z-index: 10;
-        position: relative;
-    }
-    ul{
-        position: absolute;
-        z-index: 5;
-        top: 50px;
-        background-color: #fff;
-        border: 1px solid #ada791;
-       
-        width: $boxWidth;
-        border-radius: 0 0 15px 15px;
-        overflow: hidden;
-        display: none;
-    }
-    &:hover ul {
-        display: block;         
+
+        & > li  {
+            float: left;
+
+            & > a , span {
+                float: left;
+                padding: 15px 0;
+                width: $boxWidth;
+                border-left: 1px solid #ada791;
+            }
+        }
+        & > li:first-child > a , span {
+            border-left: none;
+        }
+
     }
 
+
+    /****************
+    Drop Down Menu
+    ****************/
+    .has-submenu
+    { 
+        a {
+            display: block;
+            padding: 10px 0;
+            z-index: 10;
+            position: relative;
+        }
+        ul{
+            position: absolute;
+            z-index: 5;
+            top: 50px;
+            background-color: #fff;
+            border: 1px solid #ada791;
+
+            width: $boxWidth;
+            border-radius: 0 0 15px 15px;
+            overflow: hidden;
+            display: none;
+        }
+        &:hover ul {
+            display: block;         
+        }
+
+    }
+
+
+
 }
+
+

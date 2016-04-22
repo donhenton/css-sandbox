@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<menu type='topNav'>
+
+    <menuItem href="alpha">Alpha</menuItem>
+    <subMenu text="My Group">
+        <subMenuItem href="manny">Manny</subMenuItem>
+        <subMenuItem href="moe">Moe</subMenuItem>
+        <subMenuItem href="jack">Jack</subMenuItem>
+    </subMenu>
+    <menuItem href="beta">Beta</menuItem>
+    <menuItem href="gamma">Gamma</menuItem>
+    <menuItem href="omega">Omega</menuItem>
+
+</menu>
+
+ 
