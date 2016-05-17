@@ -1,0 +1,112 @@
+
+@import "components/reset";
+@import "components/typography";
+@import "components/fonts";
+ 
+@import url(https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900);
+
+body
+{
+    
+    margin: 70px;
+}
+
+.typeHeader
+{
+    
+    font-family: 'graphikItalic';
+    font-size: 45px;
+    min-height: 74px;
+    font-weight: 300;
+    color: #333333; 
+    margin-top: 20px;
+   
+    
+    
+}
+
+
+.boldDemo
+{
+    font-family: 'garamondBold';
+    font-size: 25px;
+    min-height: 24px;
+    font-weight: 300;
+    color: #333333; 
+    line-height: 24px;
+    border: thin solid red;
+    margin-left: 40px;
+    
+}
+
+.lightDemo
+{
+    font-family:  'graphikExtralight';
+    font-size: 25px;
+    min-height: 24px;
+     
+    
+    line-height: 24px;
+    margin-left: 40px;
+}
+.googleBold
+{
+    font-family:   Orbitron , sans-serif;
+    margin-left: 40px;
+    font-weight:900;
+    
+}
+
+.googleLight
+{
+    font-family:   Orbitron , sans-serif;
+     margin-left: 40px;
+    //font-weight: 500
+    
+}
+
+#codeSample
+{
+    margin: 20px;
+    
+    
+}
+/*     end of font-demo.scss   */
+
+/*
+if you access google fonts via the remote link this is the created sheet
+
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Orbitron-Light'), local('Orbitron-Regular'), url(https://fonts.gstatic.com/s/orbitron/v7/HmnHiRzvcnQr8CjBje6GQnYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+ 
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Orbitron-Medium'), url(https://fonts.gstatic.com/s/orbitron/v7/VK2oK8L4CJesxwY5dF3zxYgp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+ 
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Orbitron-Bold'), url(https://fonts.gstatic.com/s/orbitron/v7/Y82YH_MJJWnsH2yUA5AuYYgp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+ 
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Orbitron-Black'), url(https://fonts.gstatic.com/s/orbitron/v7/FyvTORElv6iWeP2Jf9yG3Ygp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+*/
