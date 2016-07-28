@@ -1,0 +1,50 @@
+@import "../sass/components/reset";
+
+body
+{
+    background-color: goldenrod;
+}
+.testMenu
+{
+
+    position: absolute;
+    width: 180px; height: 350px;
+    background: rgba(77,78,84,.95);
+    z-index: 400;
+    border-right: 1px solid #bfc5c8;
+    top: 20px;
+    left: 70px;	
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+     
+     
+    
+    .topLevel
+    {
+        padding-top: 5px;
+        cursor: pointer;
+        border-bottom: 2px solid rgba(40,45,45,.45);
+        .menuText
+        {
+            margin-left: 20px;
+        }
+        &:hover
+            {
+            background-color: lightseagreen;
+        }
+    }
+    .subLevel
+    {
+        cursor: pointer;
+        .menuText
+        {
+            margin-left: 40px;
+        }        &:hover
+            {
+            color: lightseagreen;
+        }
+    }
+
+}
