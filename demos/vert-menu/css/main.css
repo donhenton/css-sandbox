@@ -97,10 +97,7 @@ body {
     .testMenu .topLevel .menuText {
       margin-left: 20px; }
     .testMenu .topLevel:hover {
-      background-color: lightseagreen;
-      border-bottom: 2px solid rgba(40, 45, 45, 0.45) !important; }
-      .testMenu .topLevel:hover .subLevel {
-        background-color: rgba(77, 78, 84, 0.95); }
+      background-color: lightseagreen; }
     .testMenu .topLevel .subLevel {
       cursor: pointer;
       display: none; }
@@ -109,7 +106,7 @@ body {
       .testMenu .topLevel .subLevel:hover {
         color: lightseagreen; }
     .testMenu .topLevel.expanded:hover {
-      background-color: rgba(77, 78, 84, 0.95);
+      background-color: transparent;
       border-bottom: 2px solid rgba(40, 45, 45, 0.45) !important; }
     .testMenu .topLevel.expanded .subLevel {
       display: block; }

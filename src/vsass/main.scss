@@ -36,12 +36,8 @@ body
         &:hover
             {
             background-color: $highlight;
-
-            border-bottom: 2px solid rgba(40,45,45,.45)!important;
-            .subLevel
-            {
-                background-color: $grey-background;
-            }
+ 
+             
         }
 
         .subLevel
@@ -60,7 +56,7 @@ body
         {
             &:hover
                 {
-                background-color: $grey-background;
+                 background-color: transparent;
                 border-bottom: 2px solid rgba(40,45,45,.45)!important;
             }
             .subLevel
