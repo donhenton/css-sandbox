@@ -75,7 +75,7 @@ html {
 
 /*------------end reset.scss-------------------*/
 body {
-  background-color: goldenrod; }
+  background-color: #ffffef; }
 
 .testMenu {
   position: absolute;
@@ -97,12 +97,21 @@ body {
     .testMenu .topLevel .menuText {
       margin-left: 20px; }
     .testMenu .topLevel:hover {
-      background-color: lightseagreen; }
-  .testMenu .subLevel {
-    cursor: pointer; }
-    .testMenu .subLevel .menuText {
-      margin-left: 40px; }
-    .testMenu .subLevel:hover {
-      color: lightseagreen; }
+      background-color: lightseagreen;
+      border-bottom: 2px solid rgba(40, 45, 45, 0.45) !important; }
+      .testMenu .topLevel:hover .subLevel {
+        background-color: rgba(77, 78, 84, 0.95); }
+    .testMenu .topLevel .subLevel {
+      cursor: pointer;
+      display: none; }
+      .testMenu .topLevel .subLevel .menuText {
+        margin-left: 40px; }
+      .testMenu .topLevel .subLevel:hover {
+        color: lightseagreen; }
+    .testMenu .topLevel.expanded:hover {
+      background-color: rgba(77, 78, 84, 0.95);
+      border-bottom: 2px solid rgba(40, 45, 45, 0.45) !important; }
+    .testMenu .topLevel.expanded .subLevel {
+      display: block; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,15 +1,18 @@
 @import "../sass/components/reset";
+$grey-background: rgba(77,78,84,.95);
+$highlight: lightseagreen;
+
 
 body
 {
-    background-color: goldenrod;
+    background-color: #ffffef;
 }
 .testMenu
 {
 
     position: absolute;
     width: 180px; height: 350px;
-    background: rgba(77,78,84,.95);
+    background: $grey-background;
     z-index: 400;
     border-right: 1px solid #bfc5c8;
     top: 20px;
@@ -18,9 +21,9 @@ body
     margin-top: 10px;
     font-size: 18px;
     text-transform: uppercase;
-     
-     
-    
+
+
+
     .topLevel
     {
         padding-top: 5px;
@@ -32,19 +35,41 @@ body
         }
         &:hover
             {
-            background-color: lightseagreen;
-        }
-    }
-    .subLevel
-    {
-        cursor: pointer;
-        .menuText
-        {
-            margin-left: 40px;
-        }        &:hover
-            {
-            color: lightseagreen;
-        }
-    }
+            background-color: $highlight;
 
+            border-bottom: 2px solid rgba(40,45,45,.45)!important;
+            .subLevel
+            {
+                background-color: $grey-background;
+            }
+        }
+
+        .subLevel
+        {
+            cursor: pointer;
+            display: none;
+            .menuText
+            {
+                margin-left: 40px;
+            }        &:hover
+                {
+                color: $highlight;
+            }
+        }
+        &.expanded  
+        {
+            &:hover
+                {
+                background-color: $grey-background;
+                border-bottom: 2px solid rgba(40,45,45,.45)!important;
+            }
+            .subLevel
+            {
+                display:block;
+            }
+        }
+
+
+
+    }
 }
