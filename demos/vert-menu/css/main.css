@@ -82,10 +82,10 @@ body {
   width: 180px;
   height: 350px;
   background: rgba(77, 78, 84, 0.95);
-  z-index: 400;
+  z-index: 10;
   border-right: 1px solid #bfc5c8;
-  top: 20px;
-  left: 70px;
+  top: 100px;
+  left: 600px;
   color: white;
   margin-top: 10px;
   font-size: 18px;
@@ -110,5 +110,36 @@ body {
       border-bottom: 2px solid rgba(40, 45, 45, 0.45) !important; }
     .testMenu .topLevel.expanded .subLevel {
       display: block; }
+
+.sticky-header {
+  position: absolute;
+  text-align: center;
+  font-size: 24px;
+  padding-top: 5px;
+  left: 0;
+  margin-top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 250;
+  top: 0px;
+  background-color: #fff;
+  transition: top 350ms ease-in;
+  height: 50px;
+  -webkit-box-shadow: 0px 5px 4px 4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.4); }
+  .sticky-header.sticky-header-gone {
+    top: -65px; }
+
+/* ------------------------------- */
+.lowerItem {
+  position: absolute;
+  top: 30px;
+  padding: 40px;
+  width: 400px;
+  height: 800px;
+  color: goldenrod;
+  border: thin solid black;
+  background-color: brick; }
 
 /*# sourceMappingURL=main.css.map */
