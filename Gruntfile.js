@@ -3,41 +3,41 @@ module.exports = function (grunt) {
     //https://github.com/gruntjs/grunt-contrib-watch/blob/master/docs/watch-examples.md
     grunt.initConfig({
         sass: {
-            droptest: {
+            cssPopUp: {
                 options: {
                     style: 'expanded',
                     lineNumbers: true
                 },
                 files: {
-                    './droptest/css/droptest.css': './droptest/sass/droptest.scss'
+                    './demos/cssPopUp/css/cssPopUp.css': './demos/cssPopUp/sass/cssPopUp.scss'
                 }
             }
         },
         watch: {
             options: {livereload: true}
             ,
-            drop_html: {
-                files: [ './droptest/js/**/*.js',
-                    './droptest/css/droptest.css',
-                    './droptest/droptest.html'] 
+            pop_html: {
+                files: [ './demos/cssPopUp/js/**/*.js',
+                    './demos/cssPopUp/css/cssPopUp.css',
+                    './demos/cssPopUp/index.html'] 
             },
-             drop_sass: {
+             pop_sass: {
                 files: [  
-                    './droptest/sass/**/*.scss' ],
-                tasks: ['sass:droptest'],
+                    './demos/cssPopUp/sass/**/cssPopUp.scss' ],
+                tasks: ['sass:cssPopUp'],
                 options: {
                     spawn: false
                 }
             } 
         },
         connect: {
-            droptest: {
+            cssPopUp: {
                 options: {
                     port: 8888,
                     hostname: '*',
-                    open: 'http://localhost:8888/droptest.html',
+                    open: 'http://localhost:8888/index.html',
                     livereload: true,
-                    base: 'droptest'
+                    base: './demos/cssPopUp'
                 }
             }
         }
@@ -48,6 +48,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-connect');
-    grunt.registerTask("droptest", ['sass:droptest','connect:droptest', 'watch']);
+    grunt.registerTask("cssPopUp", ['sass:cssPopUp','connect:cssPopUp', 'watch']);
 
 }

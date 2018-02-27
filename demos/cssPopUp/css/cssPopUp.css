@@ -1,0 +1,253 @@
+/****************
+Reset
+****************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 9, ../sass/components/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 30, ../sass/components/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 34, ../sass/components/_reset.scss */
+body {
+  line-height: 1.4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 38, ../sass/components/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 41, ../sass/components/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 44, ../sass/components/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 49, ../sass/components/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 53, ../sass/components/_reset.scss */
+:focus {
+  outline: none;
+}
+
+/* line 56, ../sass/components/_reset.scss */
+strong {
+  font-weight: bold;
+}
+
+/* micro clear fix */
+/* line 60, ../sass/components/_reset.scss */
+.grouping:before,
+.grouping:after {
+  content: " ";
+  display: table;
+}
+
+/* line 65, ../sass/components/_reset.scss */
+.grouping:after {
+  clear: both;
+}
+
+/* line 68, ../sass/components/_reset.scss */
+img, iframe, video, object {
+  max-width: 100%;
+}
+
+/* line 72, ../sass/components/_reset.scss */
+html {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* line 77, ../sass/components/_reset.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/*------------end reset.scss-------------------*/
+/* typography ---------------------- */
+/* line 5, ../sass/components/_typography.scss */
+h1 {
+  font-size: 24px;
+}
+
+/* line 5, ../sass/components/_typography.scss */
+h2 {
+  font-size: 21px;
+}
+
+/* line 5, ../sass/components/_typography.scss */
+h3 {
+  font-size: 18px;
+}
+
+/* line 5, ../sass/components/_typography.scss */
+h4 {
+  font-size: 15px;
+}
+
+/* line 5, ../sass/components/_typography.scss */
+h5 {
+  font-size: 12px;
+}
+
+/* typography ---------------------- */
+/* line 4, ../sass/cssPopUp.scss */
+body {
+  margin: 20px;
+  background-color: ivory;
+}
+
+/* line 10, ../sass/cssPopUp.scss */
+.info {
+  width: 100%;
+}
+
+/* line 13, ../sass/cssPopUp.scss */
+h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #06D85F;
+  margin: 80px 0;
+}
+
+/* line 20, ../sass/cssPopUp.scss */
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255, 0, 0, 0.7);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+/* line 31, ../sass/cssPopUp.scss */
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 41, ../sass/cssPopUp.scss */
+.button:hover {
+  background: #06D85F;
+}
+
+/* line 45, ../sass/cssPopUp.scss */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* line 56, ../sass/cssPopUp.scss */
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 61, ../sass/cssPopUp.scss */
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+}
+
+/* line 71, ../sass/cssPopUp.scss */
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+/* line 76, ../sass/cssPopUp.scss */
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: undeline;
+  color: #333;
+}
+
+/* line 86, ../sass/cssPopUp.scss */
+.popup .close:hover {
+  color: #06D85F;
+}
+
+/* line 89, ../sass/cssPopUp.scss */
+.popup .content {
+  max-height: 60%;
+}
+
+@media screen and (max-width: 700px) {
+  /* line 95, ../sass/cssPopUp.scss */
+  .box {
+    width: 70%;
+  }
+
+  /* line 98, ../sass/cssPopUp.scss */
+  .popup {
+    width: 70%;
+  }
+}
+
+/*# sourceMappingURL=cssPopUp.css.map */
